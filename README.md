@@ -68,6 +68,7 @@ function yScale(stateData, chosenYAxis) {
 
   return yLinearScale;
 }
+```js
 
 ![scatter plot](assets/images/scatterplot.png)
 
@@ -139,12 +140,13 @@ d3.csv("assets/data/data.csv", function(err, stateData) {
     .attr("font-size", 9)
     .attr("font-weight", "bold")
     .attr("text-anchor","middle");
+```js
+  
+---------------------------------------------------
     
-    ---------------------------------------------------
+### Incorporate d3-tip
     
-    ### Incorporate d3-tip
-    
-    ```js
+```js
 // function used for updating circles group with new tooltip
 function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
 
@@ -193,5 +195,6 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
 
   return circlesGroup;
 }
+```js
 
 ![D3 tip](assets/images/d3tip.png)
